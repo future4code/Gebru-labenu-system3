@@ -11,21 +11,14 @@ type docen = {
 
 export class Turma {
 
-    private id!: string;
-    private nome: string;
-    private estudante: Array<estud>;
-    private docente: Array<docen>;
-    private modulo: number;
 
     constructor(
-        nome: string,
-        estudante: Array<estud>,
-        docente: Array<docen>,
-        modulo: number = 0
+        private id: string,
+        private nome: string,
+        private modulo: number,
     ) {
+        this.id = id
         this.nome = nome;
-        this.estudante = estudante;
-        this.docente = docente;
         this.modulo = modulo;
     }
 
@@ -37,15 +30,9 @@ export class Turma {
       return this.nome
     }
 
-    public getEstudante(): Array<estud> {
-        return this.estudante
-    }
-
-    public getDocente(): Array<docen> {
-      return this.docente
-    }
 
     public getModulo(): number {
       return this.modulo
     }
 } 
+
