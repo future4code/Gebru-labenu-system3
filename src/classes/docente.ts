@@ -1,4 +1,4 @@
-import { Usuario } from "./usuario";
+import { Usuario } from "./Usuario";
 
 enum espec {
     JS = "Javascript",
