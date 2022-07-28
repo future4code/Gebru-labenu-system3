@@ -1,16 +1,4 @@
-
-type estud = {
-    id: string;
-    name: string
-}
-
-type docen = {
-    id: string;
-    name: string
-}
-
 export class Turma {
-
 
     constructor(
         private id: string,

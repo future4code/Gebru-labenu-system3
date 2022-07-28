@@ -9,8 +9,8 @@ class CreateDB extends BaseDatabase {
    .raw(`
       CREATE TABLE IF NOT EXISTS Turma (
          id VARCHAR(255) PRIMARY KEY,
-         nome VARCHAR(255) NOT NULL,
-         modulo VARCHAR(255) DEFAULT 0
+         nome VARCHAR(255) UNIQUE NOT NULL,
+         modulo INT DEFAULT 0
       );
       CREATE TABLE IF NOT EXISTS Estudante (
          id VARCHAR(255) PRIMARY KEY,
